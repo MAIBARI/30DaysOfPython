@@ -1,4 +1,5 @@
 import json
+import re
 from collections import Counter
 from typing import List, Tuple
 
@@ -89,7 +90,7 @@ def most_repeated_words(filename: str, n: int) -> List[Tuple[int, str]]:
     return find_most_common_words(text, n)
 
 # Example usage for Exercise 7
-print("Most Repeated Words in Romeo and Juliet:", most_repeated_words('./data/romeo_and_juliet.txt', 10))
+print("Most Repeated Words in Romeo and Juliet:", most_repeated_words('./data/stop_words.txt', 10))
 
 # Exercise 8: Analyze hacker news CSV file
 def analyze_hacker_news(filename: str) -> Tuple[int, int, int]:
