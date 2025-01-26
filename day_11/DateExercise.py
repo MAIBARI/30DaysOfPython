@@ -25,7 +25,7 @@ time_string = "5 December, 2019"
 parsed_time = datetime.strptime(time_string, "%d %B, %Y")
 print("Parsed Time:", parsed_time)
 
-# 4. Calculate the time difference between now and New Year
+# 4. Calculate the time difference between now nd New Year
 new_year = datetime(current_year + 1, 1, 1)
 time_until_new_year = new_year - now
 print("Time Until New Year:", time_until_new_year)
@@ -42,7 +42,7 @@ examples = [
     "Adding posts on a blog",
     "Scheduling and tracking events",
     "Working with timezone-aware data",
-]
+] 
 print("Examples of datetime usage:")
 for example in examples:
     print("-", example)
